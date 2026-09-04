@@ -1,0 +1,19 @@
+{
+    "name": "SWOOP",
+    "version": "0.0.0",
+    "description": "Catch the shiny things the albino crow stole. Dodge the swoop.",
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json"
+    ],
+    "supportedTargets": [
+        "arcade"
+    ],
+    "dependencies": {
+        "device": "*"
+    },
+    "testDependencies": {},
+    "preferredEditor": "blocksprj"
+}
