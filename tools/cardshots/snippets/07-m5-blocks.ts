@@ -1,9 +1,20 @@
 let player = sprites.create(img`
-    . . . . 
-    . 1 1 . 
-    . 1 1 . 
-    . . . . 
+    . . . . . f f f f f f . . . . . 
+    . . . f f . . . . . . f f . . . 
+    . . f . . . . . . . . . . f . . 
+    . f f f f f f f f f f f f f f . 
+    . f 1 1 1 1 1 1 1 1 1 1 6 6 f . 
+    . f 1 9 9 9 9 9 9 9 9 9 6 6 f . 
+    . f 1 9 9 9 9 9 9 9 9 9 6 6 f . 
+    . . f 1 9 9 9 9 9 9 9 6 6 f . . 
+    . . f 1 6 6 6 6 6 6 6 6 6 f . . 
+    . . f 1 9 9 9 9 9 9 9 6 6 f . . 
+    . . . f 1 9 9 9 9 9 6 6 f . . . 
+    . . . f 1 9 9 9 9 9 6 6 f . . . 
+    . . . f 1 9 9 9 9 9 6 6 f . . . 
+    . . . . f 1 9 9 9 6 6 f . . . . 
+    . . . . f f f f f f f f . . . . 
+    . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
 player.setScale(1.5, ScaleAnchor.Middle)
-music.play(music.createSoundEffect(WaveShape.Sine, 400, 1200, 255, 0, 100, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.InBackground)
 info.startCountdown(60)

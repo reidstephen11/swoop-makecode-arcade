@@ -1,0 +1,149 @@
+[
+  {
+    "checks": [],
+    "name": "01-starter-idle",
+    "variant": "starter",
+    "mode": "idle",
+    "seconds": 3,
+    "last": {
+      "t": 3136,
+      "score": 1,
+      "life": 3,
+      "px": 80,
+      "py": 96,
+      "loot": 2,
+      "crows": 0
+    },
+    "maxLoot": 2,
+    "maxCrows": 1,
+    "xRange": [
+      80,
+      80
+    ],
+    "errors": []
+  },
+  {
+    "checks": [
+      "CHECK double life=2",
+      "CHECK catch gain=1 life=2",
+      "CHECK during life=2",
+      "CHECK expired life=1"
+    ],
+    "name": "02-protection-idle",
+    "variant": "protection",
+    "mode": "idle",
+    "seconds": 2,
+    "firstLife": {
+      "t": 443,
+      "score": 0,
+      "life": 2,
+      "px": 80,
+      "py": 96,
+      "loot": 2,
+      "crows": 1
+    },
+    "last": {
+      "t": 2168,
+      "score": 2,
+      "life": 1,
+      "px": 80,
+      "py": 96,
+      "loot": 1,
+      "crows": 1
+    },
+    "maxLoot": 2,
+    "maxCrows": 3,
+    "xRange": [
+      80,
+      80
+    ],
+    "errors": []
+  },
+  {
+    "checks": [],
+    "name": "03-combined-bot",
+    "variant": "combined",
+    "mode": "bot",
+    "seconds": 35,
+    "firstLife": {
+      "t": 2169,
+      "score": 1,
+      "life": 2,
+      "px": 153.21875,
+      "py": 96,
+      "loot": 3,
+      "crows": 2
+    },
+    "last": {
+      "t": 6155,
+      "score": 3,
+      "life": 0,
+      "px": 153.78125,
+      "py": 96,
+      "loot": 2,
+      "crows": 1
+    },
+    "maxLoot": 3,
+    "maxCrows": 3,
+    "xRange": [
+      44.82421875,
+      154
+    ],
+    "errors": []
+  },
+  {
+    "checks": [],
+    "name": "04-m5-bot",
+    "variant": "m5",
+    "mode": "bot",
+    "seconds": 35,
+    "firstLife": {
+      "t": 7808,
+      "score": 10,
+      "life": 2,
+      "px": 54.09765625,
+      "py": 96,
+      "loot": 2,
+      "crows": 0
+    },
+    "last": {
+      "t": 11371,
+      "score": 14,
+      "life": 2,
+      "px": 23.31640625,
+      "py": 96,
+      "loot": 2,
+      "crows": 1
+    },
+    "maxLoot": 3,
+    "maxCrows": 1,
+    "xRange": [
+      11,
+      150.13671875
+    ],
+    "errors": []
+  },
+  {
+    "checks": [],
+    "name": "05-countdown-idle",
+    "variant": "countdown",
+    "mode": "idle",
+    "seconds": 6,
+    "last": {
+      "t": 2935,
+      "score": 1,
+      "life": 3,
+      "px": 80,
+      "py": 96,
+      "loot": 2,
+      "crows": 0
+    },
+    "maxLoot": 2,
+    "maxCrows": 1,
+    "xRange": [
+      80,
+      80
+    ],
+    "errors": []
+  }
+]

@@ -1,0 +1,18 @@
+injected "adf7199b-6106-4ff4-82d9-864dc27439d9"
+TABS ["Blocks:ACTIVE","JavaScript:-","JavaScript:-"]
+SVG [{"text":"250015array ofarray ofSceneryspriteof kindground80100Playerspriteof kindplayer8096playerONEdit toggl","rect":{"x":562,"y":74,"width":511.2281494140625,"height":930.6000366210938,"top":74,"right":1073.2281494140625,"bottom":1004.6000366210938,"left":562}},{"text":"dropEverylootget random value fromShinyspriteof kindshiny10150pick randomto0shiny0fallSpeedshinyONEd","rect":{"x":1156,"y":74,"width":680.4703369140625,"height":266.4000244140625,"top":74,"right":1836.4703369140625,"bottom":340.4000244140625,"left":1156}},{"text":"3500crowFrames0get value atCrowspriteof kindcrow-61872pick randomtocrow7216crowONEdit toggle: ONcrow","rect":{"x":1156,"y":344,"width":673.2633056640625,"height":424.800048828125,"top":344,"right":1829.2633056640625,"bottom":768.800048828125,"left":1156}},{"text":"spritePlayerotherSpriteShiny1otherSprite100destroywithwarm radialeffect formschange score byonof kin","rect":{"x":1156,"y":650,"width":659.05322265625,"height":165.60003662109375,"top":650,"right":1815.05322265625,"bottom":815.6000366210938,"left":1156}},{"text":"spritePlayerotherSpriteCrow-1otherSprite2004500camera shake bypixels formsdestroywithsprayeffect for","rect":{"x":1156,"y":866.0000610351562,"width":650.4117431640625,"height":208.79998779296875,"top":866.0000610351562,"right":1806.4117431640625,"bottom":1074.800048828125,"left":1156}}]
+COMBINED [
+  {
+    files: [
+      'main.blocks',
+      'main.ts',
+      'pxt.json',
+      'README.md',
+      'assets.json',
+      '.simstate.json',
+      '_history'
+    ],
+    unsupported: 0,
+    score15: true
+  }
+]

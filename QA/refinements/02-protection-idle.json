@@ -1,0 +1,1122 @@
+{
+  "summary": {
+    "checks": [
+      "CHECK double life=2",
+      "CHECK catch gain=1 life=2",
+      "CHECK during life=2",
+      "CHECK expired life=1"
+    ],
+    "name": "02-protection-idle",
+    "variant": "protection",
+    "mode": "idle",
+    "seconds": 2,
+    "firstLife": {
+      "t": 432,
+      "score": 0,
+      "life": 2,
+      "px": 80,
+      "py": 96,
+      "loot": 2,
+      "crows": 1
+    },
+    "last": {
+      "t": 2151,
+      "score": 2,
+      "life": 1,
+      "px": 80,
+      "py": 96,
+      "loot": 1,
+      "crows": 1
+    },
+    "maxLoot": 2,
+    "maxCrows": 2,
+    "xRange": [
+      80,
+      80
+    ],
+    "errors": []
+  },
+  "logs": [
+    "QA t=1 score=0 life=3 px=80 py=96 loot=2 crows=1",
+    "QA t=108 score=0 life=3 px=80 py=96 loot=2 crows=1",
+    "QA t=216 score=0 life=3 px=80 py=96 loot=2 crows=1",
+    "QA t=323 score=0 life=3 px=80 py=96 loot=2 crows=1",
+    "QA t=432 score=0 life=2 px=80 py=96 loot=2 crows=1",
+    "CHECK double life=2",
+    "QA t=537 score=1 life=2 px=80 py=96 loot=2 crows=1",
+    "CHECK catch gain=1 life=2",
+    "QA t=643 score=1 life=2 px=80 py=96 loot=2 crows=1",
+    "QA t=750 score=1 life=2 px=80 py=96 loot=2 crows=1",
+    "QA t=859 score=1 life=2 px=80 py=96 loot=2 crows=1",
+    "QA t=976 score=2 life=2 px=80 py=96 loot=1 crows=1",
+    "CHECK during life=2",
+    "QA t=1082 score=2 life=2 px=80 py=96 loot=1 crows=1",
+    "QA t=1191 score=2 life=2 px=80 py=96 loot=1 crows=1",
+    "QA t=1299 score=2 life=2 px=80 py=96 loot=1 crows=1",
+    "QA t=1404 score=2 life=2 px=80 py=96 loot=1 crows=1",
+    "QA t=1510 score=2 life=1 px=80 py=96 loot=1 crows=1",
+    "CHECK expired life=1",
+    "QA t=1619 score=2 life=1 px=80 py=96 loot=1 crows=1",
+    "QA t=1729 score=2 life=1 px=80 py=96 loot=1 crows=1",
+    "QA t=1837 score=2 life=1 px=80 py=96 loot=1 crows=1",
+    "QA t=1942 score=2 life=1 px=80 py=96 loot=1 crows=1",
+    "QA t=2046 score=2 life=1 px=80 py=96 loot=1 crows=1",
+    "QA t=2151 score=2 life=1 px=80 py=96 loot=1 crows=1"
+  ],
+  "states": [
+    {
+      "wall": 42,
+      "t": 1,
+      "score": 0,
+      "life": 3,
+      "px": 80,
+      "py": 96,
+      "loot": 2,
+      "crows": 1,
+      "player": {
+        "id": 0,
+        "kind": 1000,
+        "x": 80,
+        "y": 96,
+        "vx": 0,
+        "vy": 0,
+        "w": 16,
+        "h": 16,
+        "flags": 8
+      },
+      "millis": 45,
+      "items": [
+        {
+          "id": 0,
+          "kind": 1000,
+          "x": 80,
+          "y": 96,
+          "vx": 0,
+          "vy": 0,
+          "w": 16,
+          "h": 16,
+          "flags": 8
+        },
+        {
+          "id": 2,
+          "kind": 1005,
+          "x": 80,
+          "y": 100,
+          "vx": 0,
+          "vy": 0,
+          "w": 160,
+          "h": 44,
+          "flags": 0
+        },
+        {
+          "id": 3,
+          "kind": 1003,
+          "x": 80,
+          "y": 72.625,
+          "vx": 0,
+          "vy": 15,
+          "w": 8,
+          "h": 8,
+          "flags": 4
+        },
+        {
+          "id": 4,
+          "kind": 1003,
+          "x": 141,
+          "y": 0.625,
+          "vx": 0,
+          "vy": 15,
+          "w": 8,
+          "h": 8,
+          "flags": 4
+        },
+        {
+          "id": 5,
+          "kind": 1004,
+          "x": -2.98046875,
+          "y": 53.66796875,
+          "vx": 72,
+          "vy": 16,
+          "w": 16,
+          "h": 16,
+          "flags": 4
+        },
+        {
+          "id": 1,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        }
+      ]
+    },
+    {
+      "wall": 133,
+      "t": 108,
+      "score": 0,
+      "life": 3,
+      "px": 80,
+      "py": 96,
+      "loot": 2,
+      "crows": 1,
+      "player": {
+        "id": 0,
+        "kind": 1000,
+        "x": 80,
+        "y": 96,
+        "vx": 0,
+        "vy": 0,
+        "w": 16,
+        "h": 16,
+        "flags": 8
+      },
+      "millis": 152,
+      "items": [
+        {
+          "id": 0,
+          "kind": 1000,
+          "x": 80,
+          "y": 96,
+          "vx": 0,
+          "vy": 0,
+          "w": 16,
+          "h": 16,
+          "flags": 8
+        },
+        {
+          "id": 2,
+          "kind": 1005,
+          "x": 80,
+          "y": 100,
+          "vx": 0,
+          "vy": 0,
+          "w": 160,
+          "h": 44,
+          "flags": 0
+        },
+        {
+          "id": 3,
+          "kind": 1003,
+          "x": 80,
+          "y": 74.171875,
+          "vx": 0,
+          "vy": 15,
+          "w": 8,
+          "h": 8,
+          "flags": 4
+        },
+        {
+          "id": 4,
+          "kind": 1003,
+          "x": 141,
+          "y": 2.171875,
+          "vx": 0,
+          "vy": 15,
+          "w": 8,
+          "h": 8,
+          "flags": 4
+        },
+        {
+          "id": 5,
+          "kind": 1004,
+          "x": 4.49609375,
+          "y": 55.3203125,
+          "vx": 72,
+          "vy": 16,
+          "w": 16,
+          "h": 16,
+          "flags": 4
+        },
+        {
+          "id": 1,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        }
+      ]
+    },
+    {
+      "wall": 272,
+      "t": 216,
+      "score": 0,
+      "life": 3,
+      "px": 80,
+      "py": 96,
+      "loot": 2,
+      "crows": 1,
+      "player": {
+        "id": 0,
+        "kind": 1000,
+        "x": 80,
+        "y": 96,
+        "vx": 0,
+        "vy": 0,
+        "w": 16,
+        "h": 16,
+        "flags": 8
+      },
+      "millis": 257,
+      "items": [
+        {
+          "id": 0,
+          "kind": 1000,
+          "x": 80,
+          "y": 96,
+          "vx": 0,
+          "vy": 0,
+          "w": 16,
+          "h": 16,
+          "flags": 8
+        },
+        {
+          "id": 2,
+          "kind": 1005,
+          "x": 80,
+          "y": 100,
+          "vx": 0,
+          "vy": 0,
+          "w": 160,
+          "h": 44,
+          "flags": 0
+        },
+        {
+          "id": 3,
+          "kind": 1003,
+          "x": 80,
+          "y": 75.6875,
+          "vx": 0,
+          "vy": 15,
+          "w": 8,
+          "h": 8,
+          "flags": 4
+        },
+        {
+          "id": 4,
+          "kind": 1003,
+          "x": 141,
+          "y": 3.6875,
+          "vx": 0,
+          "vy": 15,
+          "w": 8,
+          "h": 8,
+          "flags": 4
+        },
+        {
+          "id": 5,
+          "kind": 1004,
+          "x": 11.828125,
+          "y": 56.9375,
+          "vx": 72,
+          "vy": 16,
+          "w": 16,
+          "h": 16,
+          "flags": 4
+        },
+        {
+          "id": 1,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        }
+      ]
+    },
+    {
+      "wall": 787,
+      "t": 750,
+      "score": 1,
+      "life": 2,
+      "px": 80,
+      "py": 96,
+      "loot": 2,
+      "crows": 1,
+      "player": {
+        "id": 0,
+        "kind": 1000,
+        "x": 80,
+        "y": 96,
+        "vx": 0,
+        "vy": 0,
+        "w": 16,
+        "h": 16,
+        "flags": 8
+      },
+      "millis": 812,
+      "items": [
+        {
+          "id": 0,
+          "kind": 1000,
+          "x": 80,
+          "y": 96,
+          "vx": 0,
+          "vy": 0,
+          "w": 16,
+          "h": 16,
+          "flags": 8
+        },
+        {
+          "id": 2,
+          "kind": 1005,
+          "x": 80,
+          "y": 100,
+          "vx": 0,
+          "vy": 0,
+          "w": 160,
+          "h": 44,
+          "flags": 0
+        },
+        {
+          "id": 3,
+          "kind": 1003,
+          "x": 80,
+          "y": 83.71875,
+          "vx": 0,
+          "vy": 15,
+          "w": 8,
+          "h": 8,
+          "flags": 4
+        },
+        {
+          "id": 4,
+          "kind": 1003,
+          "x": 141,
+          "y": 11.71875,
+          "vx": 0,
+          "vy": 15,
+          "w": 8,
+          "h": 8,
+          "flags": 4
+        },
+        {
+          "id": 5,
+          "kind": 1004,
+          "x": 50.6484375,
+          "y": 65.515625,
+          "vx": 72,
+          "vy": 16,
+          "w": 16,
+          "h": 16,
+          "flags": 4
+        },
+        {
+          "id": 8,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 9,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 10,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 12,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 1,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        }
+      ]
+    },
+    {
+      "wall": 1083,
+      "t": 1082,
+      "score": 2,
+      "life": 2,
+      "px": 80,
+      "py": 96,
+      "loot": 1,
+      "crows": 2,
+      "player": {
+        "id": 0,
+        "kind": 1000,
+        "x": 80,
+        "y": 96,
+        "vx": 0,
+        "vy": 0,
+        "w": 16,
+        "h": 16,
+        "flags": 8
+      },
+      "millis": 1104,
+      "items": [
+        {
+          "id": 0,
+          "kind": 1000,
+          "x": 80,
+          "y": 96,
+          "vx": 0,
+          "vy": 0,
+          "w": 16,
+          "h": 16,
+          "flags": 8
+        },
+        {
+          "id": 2,
+          "kind": 1005,
+          "x": 80,
+          "y": 100,
+          "vx": 0,
+          "vy": 0,
+          "w": 160,
+          "h": 44,
+          "flags": 0
+        },
+        {
+          "id": 4,
+          "kind": 1003,
+          "x": 141,
+          "y": 15.94921875,
+          "vx": 0,
+          "vy": 15,
+          "w": 8,
+          "h": 8,
+          "flags": 4
+        },
+        {
+          "id": 5,
+          "kind": 1004,
+          "x": 71.0703125,
+          "y": 70.03515625,
+          "vx": 72,
+          "vy": 16,
+          "w": 16,
+          "h": 16,
+          "flags": 4
+        },
+        {
+          "id": 8,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 9,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 10,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 12,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 13,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 14,
+          "kind": 1004,
+          "x": 80,
+          "y": 96,
+          "vx": 0,
+          "vy": 0,
+          "w": 16,
+          "h": 16,
+          "flags": 7170
+        },
+        {
+          "id": 15,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 1,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        }
+      ]
+    },
+    {
+      "wall": 1183,
+      "t": 1191,
+      "score": 2,
+      "life": 2,
+      "px": 80,
+      "py": 96,
+      "loot": 1,
+      "crows": 1,
+      "player": {
+        "id": 0,
+        "kind": 1000,
+        "x": 80,
+        "y": 96,
+        "vx": 0,
+        "vy": 0,
+        "w": 16,
+        "h": 16,
+        "flags": 8
+      },
+      "millis": 1212,
+      "items": [
+        {
+          "id": 0,
+          "kind": 1000,
+          "x": 80,
+          "y": 96,
+          "vx": 0,
+          "vy": 0,
+          "w": 16,
+          "h": 16,
+          "flags": 8
+        },
+        {
+          "id": 2,
+          "kind": 1005,
+          "x": 80,
+          "y": 100,
+          "vx": 0,
+          "vy": 0,
+          "w": 160,
+          "h": 44,
+          "flags": 0
+        },
+        {
+          "id": 4,
+          "kind": 1003,
+          "x": 141,
+          "y": 17.49609375,
+          "vx": 0,
+          "vy": 15,
+          "w": 8,
+          "h": 8,
+          "flags": 4
+        },
+        {
+          "id": 5,
+          "kind": 1004,
+          "x": 78.546875,
+          "y": 71.6875,
+          "vx": 72,
+          "vy": 16,
+          "w": 16,
+          "h": 16,
+          "flags": 4
+        },
+        {
+          "id": 8,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 9,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 10,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 12,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 13,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 15,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 1,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        }
+      ]
+    },
+    {
+      "wall": 1284,
+      "t": 1299,
+      "score": 2,
+      "life": 2,
+      "px": 80,
+      "py": 96,
+      "loot": 1,
+      "crows": 1,
+      "player": {
+        "id": 0,
+        "kind": 1000,
+        "x": 80,
+        "y": 96,
+        "vx": 0,
+        "vy": 0,
+        "w": 16,
+        "h": 16,
+        "flags": 8
+      },
+      "millis": 1299,
+      "items": [
+        {
+          "id": 0,
+          "kind": 1000,
+          "x": 80,
+          "y": 96,
+          "vx": 0,
+          "vy": 0,
+          "w": 16,
+          "h": 16,
+          "flags": 8
+        },
+        {
+          "id": 2,
+          "kind": 1005,
+          "x": 80,
+          "y": 100,
+          "vx": 0,
+          "vy": 0,
+          "w": 160,
+          "h": 44,
+          "flags": 0
+        },
+        {
+          "id": 4,
+          "kind": 1003,
+          "x": 141,
+          "y": 18.74609375,
+          "vx": 0,
+          "vy": 15,
+          "w": 8,
+          "h": 8,
+          "flags": 4
+        },
+        {
+          "id": 5,
+          "kind": 1004,
+          "x": 84.5859375,
+          "y": 73.0234375,
+          "vx": 72,
+          "vy": 16,
+          "w": 16,
+          "h": 16,
+          "flags": 4
+        },
+        {
+          "id": 8,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 9,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 10,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 12,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 13,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 15,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 1,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        }
+      ]
+    },
+    {
+      "wall": 1814,
+      "t": 1837,
+      "score": 2,
+      "life": 1,
+      "px": 80,
+      "py": 96,
+      "loot": 1,
+      "crows": 1,
+      "player": {
+        "id": 0,
+        "kind": 1000,
+        "x": 80,
+        "y": 96,
+        "vx": 0,
+        "vy": 0,
+        "w": 16,
+        "h": 16,
+        "flags": 8
+      },
+      "millis": 1837,
+      "items": [
+        {
+          "id": 0,
+          "kind": 1000,
+          "x": 80,
+          "y": 96,
+          "vx": 0,
+          "vy": 0,
+          "w": 16,
+          "h": 16,
+          "flags": 8
+        },
+        {
+          "id": 2,
+          "kind": 1005,
+          "x": 80,
+          "y": 100,
+          "vx": 0,
+          "vy": 0,
+          "w": 160,
+          "h": 44,
+          "flags": 0
+        },
+        {
+          "id": 4,
+          "kind": 1003,
+          "x": 141,
+          "y": 26.54296875,
+          "vx": 0,
+          "vy": 15,
+          "w": 8,
+          "h": 8,
+          "flags": 4
+        },
+        {
+          "id": 5,
+          "kind": 1004,
+          "x": 122.2578125,
+          "y": 81.35546875,
+          "vx": 72,
+          "vy": 16,
+          "w": 16,
+          "h": 16,
+          "flags": 4
+        },
+        {
+          "id": 9,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 12,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 13,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 15,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 17,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 18,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 1,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        }
+      ]
+    },
+    {
+      "wall": 1934,
+      "t": 1942,
+      "score": 2,
+      "life": 1,
+      "px": 80,
+      "py": 96,
+      "loot": 1,
+      "crows": 1,
+      "player": {
+        "id": 0,
+        "kind": 1000,
+        "x": 80,
+        "y": 96,
+        "vx": 0,
+        "vy": 0,
+        "w": 16,
+        "h": 16,
+        "flags": 8
+      },
+      "millis": 1962,
+      "items": [
+        {
+          "id": 0,
+          "kind": 1000,
+          "x": 80,
+          "y": 96,
+          "vx": 0,
+          "vy": 0,
+          "w": 16,
+          "h": 16,
+          "flags": 8
+        },
+        {
+          "id": 2,
+          "kind": 1005,
+          "x": 80,
+          "y": 100,
+          "vx": 0,
+          "vy": 0,
+          "w": 160,
+          "h": 44,
+          "flags": 0
+        },
+        {
+          "id": 4,
+          "kind": 1003,
+          "x": 141,
+          "y": 28.35546875,
+          "vx": 0,
+          "vy": 15,
+          "w": 8,
+          "h": 8,
+          "flags": 4
+        },
+        {
+          "id": 5,
+          "kind": 1004,
+          "x": 131.02734375,
+          "y": 83.2890625,
+          "vx": 72,
+          "vy": 16,
+          "w": 16,
+          "h": 16,
+          "flags": 4
+        },
+        {
+          "id": 9,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 12,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 13,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 15,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 17,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 18,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        },
+        {
+          "id": 1,
+          "x": null,
+          "y": null,
+          "vx": null,
+          "vy": null,
+          "w": null,
+          "h": null
+        }
+      ]
+    }
+  ]
+}

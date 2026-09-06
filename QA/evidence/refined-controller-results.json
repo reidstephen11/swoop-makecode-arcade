@@ -1,0 +1,117 @@
+[
+  {
+    "name": "17-starter-bot",
+    "variant": "starter",
+    "mode": "bot",
+    "seconds": 60,
+    "firstLife": {
+      "t": 4979,
+      "score": 0,
+      "life": 2,
+      "px": 97.26953125,
+      "py": 96,
+      "loot": 2,
+      "crows": 0
+    },
+    "last": {
+      "t": 60151,
+      "score": 21,
+      "life": 2,
+      "px": 142.87890625,
+      "py": 96,
+      "loot": 2,
+      "crows": 1
+    },
+    "maxLoot": 4,
+    "maxCrows": 1,
+    "xRange": [
+      7,
+      154
+    ],
+    "errors": []
+  },
+  {
+    "name": "18-m2-bot",
+    "variant": "m2",
+    "mode": "bot",
+    "seconds": 60,
+    "firstLife": {
+      "t": 18916,
+      "score": 19,
+      "life": 2,
+      "px": 94.53125,
+      "py": 96,
+      "loot": 3,
+      "crows": 0
+    },
+    "last": {
+      "t": 60074,
+      "score": 64,
+      "life": 1,
+      "px": 57.0234375,
+      "py": 96,
+      "loot": 2,
+      "crows": 1
+    },
+    "maxLoot": 3,
+    "maxCrows": 1,
+    "xRange": [
+      7,
+      154
+    ],
+    "errors": []
+  },
+  {
+    "name": "19-m3-bot",
+    "variant": "m3",
+    "mode": "bot",
+    "seconds": 40,
+    "last": {
+      "t": 14246,
+      "score": 14,
+      "life": 3,
+      "px": 118.703125,
+      "py": 96,
+      "loot": 2,
+      "crows": 1
+    },
+    "maxLoot": 4,
+    "maxCrows": 1,
+    "xRange": [
+      46.578125,
+      148.16796875
+    ],
+    "errors": []
+  },
+  {
+    "name": "20-combined-bot",
+    "variant": "combined",
+    "mode": "bot",
+    "seconds": 40,
+    "firstLife": {
+      "t": 13219,
+      "score": 13,
+      "life": 2,
+      "px": 67.70703125,
+      "py": 96,
+      "loot": 2,
+      "crows": 0
+    },
+    "last": {
+      "t": 14276,
+      "score": 14,
+      "life": 2,
+      "px": 139.83203125,
+      "py": 96,
+      "loot": 3,
+      "crows": 2
+    },
+    "maxLoot": 3,
+    "maxCrows": 3,
+    "xRange": [
+      7,
+      139.83203125
+    ],
+    "errors": []
+  }
+]

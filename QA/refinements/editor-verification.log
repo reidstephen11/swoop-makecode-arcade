@@ -1,0 +1,88 @@
+BOUNDS [{"text":"250015Playerspriteof kindplayer8096playerONEdit toggle: ONplayer110003array ofarray ofSceneryspriteo","rect":{"x":562,"y":74,"width":658.3218994140625,"height":1161,"top":74,"right":1220.3218994140625,"bottom":1235,"left":562}},{"text":"dropEverylootget random value fromShinyspriteof kindshiny10150pick randomto0shiny0fallSpeedshinyONEd","rect":{"x":1282,"y":74,"width":680.4703369140625,"height":266.4000244140625,"top":74,"right":1962.4703369140625,"bottom":340.4000244140625,"left":1282}},{"text":"3500crowFrames0get value atCrowspriteof kindcrow-61872pick randomtocrow7216crowONEdit toggle: ONcrow","rect":{"x":1282,"y":371,"width":673.2633056640625,"height":424.800048828125,"top":371,"right":1955.2633056640625,"bottom":795.800048828125,"left":1282}},{"text":"spritePlayerotherSpriteCrowotherSprite200time since start (ms)protectedUntil‏≥time since start (ms)1","rect":{"x":1282,"y":848.0000610351562,"width":661.7391357421875,"height":424.79998779296875,"top":848.0000610351562,"right":1943.7391357421875,"bottom":1272.800048828125,"left":1282}},{"text":"spritePlayerotherSpriteShiny1otherSprite100destroywithwarm radialeffect formschange score byonof kin","rect":{"x":1282,"y":1316,"width":659.05322265625,"height":165.60009765625,"top":1316,"right":1941.05322265625,"bottom":1481.60009765625,"left":1282}}]
+SAVE [
+  {
+    tag: 'DIV',
+    text: 'Assets',
+    label: 'View project assets',
+    title: 'View project assets',
+    type: null
+  },
+  {
+    tag: 'DIV',
+    text: '',
+    label: 'Share Project',
+    title: 'Publish your game to create a shareable link',
+    type: null
+  },
+  {
+    tag: 'DIV',
+    text: 'Problems0Explain with AIDebug this project',
+    label: 'Expand error list',
+    title: null,
+    type: null
+  },
+  {
+    tag: 'BUTTON',
+    text: 'Debug this project',
+    label: 'Debug this project',
+    title: 'Debug this project',
+    type: null
+  },
+  {
+    tag: 'BUTTON',
+    text: '',
+    label: 'Save raw text',
+    title: 'Save raw text',
+    type: null
+  },
+  {
+    tag: 'DIV',
+    text: 'Problems0Explain with AIDebug this project',
+    label: 'Expand error list',
+    title: null,
+    type: null
+  },
+  {
+    tag: 'BUTTON',
+    text: 'Debug this project',
+    label: 'Debug this project',
+    title: 'Debug this project',
+    type: null
+  },
+  {
+    tag: 'BUTTON',
+    text: 'Download',
+    label: null,
+    title: 'Download your code to the Arcade',
+    type: null
+  },
+  {
+    tag: 'DIV',
+    text: 'Choose HardwareDownload as File',
+    label: null,
+    title: 'Download options',
+    type: null
+  },
+  {
+    tag: 'BUTTON',
+    text: '',
+    label: null,
+    title: 'Download your code to the Arcade',
+    type: null
+  },
+  {
+    tag: 'DIV',
+    text: 'HardwareDownload',
+    label: null,
+    title: 'Download options',
+    type: null
+  },
+  {
+    tag: 'BUTTON',
+    text: '',
+    label: 'Save the project',
+    title: 'Save',
+    type: null
+  }
+]
+EXPORTED arcade-SWOOP.png

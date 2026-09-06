@@ -1,3 +1,5 @@
+> **Historical brief.** Audience, timing and delivery guidance were updated on 6 September 2026 after QA and user approval. Use [README.md](README.md) and the teacher run sheet for the current Year 5-6 session. Earlier completion and publishing claims below describe the original build.
+
 # HANDOFF — Build "SWOOP", a MakeCode Arcade taster for Year 6
 
 **You are picking this up cold. Read this whole file before writing code.**
