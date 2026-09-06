@@ -1,0 +1,5 @@
+using project: /private/tmp/swoop-refinements-20260906/checkpoint/pxt.json
+using config: /private/tmp/swoop-refinements-20260906/checkpoint/mkc.json
+using editor: https://arcade.makecode.com/ v4.1.17
+write /private/tmp/swoop-refinements-20260906/checkpoint/built/binary.js
+Build OK

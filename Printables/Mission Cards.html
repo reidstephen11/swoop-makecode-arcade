@@ -2,7 +2,7 @@
 <html lang="en-AU">
 <head>
 <meta charset="utf-8">
-<title>SWOOP — Mission Cards</title>
+<title>SWOOP - Mission Cards</title>
 <style>
   @page { size: A4 portrait; margin: 0; }
 
@@ -71,7 +71,7 @@
   .tool { padding: 0.3mm 1.6mm; border-radius: 1mm; color: #fff; font-size: 9pt; font-weight: 700; }
 
   img.shot { max-width: 100%; display: block; margin: 0 auto; }
-  .cap { font-size: 8.2pt; color: #6B7A8A; margin-top: 2mm; line-height: 1.3; }
+  .cap { font-size: 9pt; color: #6B7A8A; margin-top: 2mm; line-height: 1.3; }
 
   /* ---------- footer strip ---------- */
   .foot { position: absolute; left: 9mm; right: 9mm; bottom: 7mm; }
@@ -88,6 +88,7 @@
   .warn  { background: #FFF3E0; color: #4A3410; }
   .warn > b{ color: #B5701A; }
 
+  .c5 ol.steps > li { font-size: 10pt; margin-bottom: 2.3mm; line-height: 1.28; }
   /* ---------- mission colours ---------- */
   .c1 .badge, .c1 .rule { background: #4C97FF; }
   .c2 .badge, .c2 .rule { background: #EF4A54; }
@@ -118,7 +119,7 @@
     <div class="hd">
       <div class="badge">1</div>
       <h1>Make it yours</h1>
-      <p class="why">Right now it's my game. Two changes and it's yours.</p>
+      <p class="why">Make one visible change, then try it out.</p>
     </div>
     <div class="rule"></div>
 
@@ -126,10 +127,10 @@
       <table class="body"><tbody><tr>
         <td class="left">
           <ol class="steps">
-            <li>In the green <span class="blk">on start</span> block, find <span class="blk">set player to sprite</span>. There's a tiny bucket sitting in it.</li>
-            <li>Click the tiny bucket. A drawing grid opens.</li>
-            <li>Draw whatever you want to catch with. Then hit the green <b>Done</b> button, bottom right.</li>
-            <li>Back on the blocks, find <span class="blk">set background color to</span>. Click the coloured circle and pick a new sky.</li>
+            <li>Near the top of green <span class="blk">on start</span>, find the sky colour and <span class="blk">set player to sprite</span>.</li>
+            <li>Choose the bucket OR the sky. Click its picture or coloured circle.</li>
+            <li>For the bucket, recolour a few pixels. <b>Keep some solid pixels so it can catch.</b> Click <b>Done</b>.</li>
+            <li>Restart the game. Can you see your change and catch a shiny thing? Try the other edit if you like.</li>
           </ol>
         </td>
         <td class="right">
@@ -141,9 +142,9 @@
 
     <div class="foot">
       <table class="foot-t"><tbody><tr>
-        <td style="width:36%"><div class="box ok"><b>You'll know it worked</b>Press ▶. Your thing is down the bottom, and the sky has changed.</div></td>
-        <td style="width:34%"><div class="box warn"><b>Watch out</b>The crow is <b class="inl">white</b>. Pick a dark sky or you won't see it coming.</div></td>
-        <td style="width:30%"><div class="box next"><b>Finished early?</b>Use the whole 16&times;16 grid. Give it a face.</div></td>
+        <td style="width:36%"><div class="box ok"><b>You'll know it worked</b>You can point to your change and say what you chose.</div></td>
+        <td style="width:34%"><div class="box warn"><b>Watch out</b>Test that you can see the crow and catcher against your chosen sky.</div></td>
+        <td style="width:30%"><div class="box next"><b>Try a challenge</b>Draw a new catcher. Does its shape change how it catches?</div></td>
       </tr></tbody></table>
     </div>
   </div>
@@ -153,8 +154,8 @@
     <div class="tag">SWOOP · MISSION 2 OF 5</div>
     <div class="hd">
       <div class="badge">2</div>
-      <h1>Fix the difficulty</h1>
-      <p class="why">The game is dull. Two numbers are wrong. You're going to fix them.</p>
+      <h1>Find your fun</h1>
+      <p class="why">Choose your game's feel: relaxed, busy or tricky.</p>
     </div>
     <div class="rule"></div>
 
@@ -162,24 +163,24 @@
       <table class="body"><tbody><tr>
         <td class="left">
           <ol class="steps">
-            <li>Look at the <b>very top</b> of <span class="blk">on start</span>. The first two red blocks. That's all you need today.</li>
-            <li><span class="blk">dropEvery</span> is the wait between shiny things, in milliseconds. <b>2500</b> means one every 2.5 seconds — far too slow.</li>
-            <li><span class="blk">fallSpeed</span> is how fast they drop. <b>15</b> is a slow drift.</li>
-            <li>Change both. Press ▶. Change them again. Keep going until it feels right.</li>
+            <li>Find the first two red variable blocks in <span class="blk">on start</span>. Choose <b>one</b> setting to change.</li>
+            <li><span class="blk">dropEvery</span>: smaller means more frequent loot. Try <b>700</b> instead of 2500 as one experiment.</li>
+            <li><span class="blk">fallSpeed</span>: larger means faster falling. Try <b>60</b> instead of 15 as another experiment.</li>
+            <li>Predict what will happen. Change <b>one number</b>, restart and test for 20 seconds. Keep it or adjust it.</li>
           </ol>
         </td>
         <td class="right">
           <img class="shot" src="img/m2-numbers.png" style="width:100%">
-          <div class="cap">Stuck for numbers? Try <b>700</b> and <b>60</b> — then beat your own score.</div>
+          <div class="cap">These are starting settings. Your design can be relaxed, busy or tricky.</div>
         </td>
       </tr></tbody></table>
     </div>
 
     <div class="foot">
       <table class="foot-t"><tbody><tr>
-        <td style="width:40%"><div class="box ok"><b>You'll know it worked</b>You're busy. If you can stand still and still catch things, it's still too easy.</div></td>
+        <td style="width:40%"><div class="box ok"><b>You'll know it worked</b>You can explain: changing this number caused ___ to happen.</div></td>
         <td style="width:30%"><div class="box warn"><b>Watch out</b>Change <b class="inl">one</b> number at a time, or you won't know which one did it.</div></td>
-        <td style="width:30%"><div class="box next"><b>Finished early?</b>Break it on purpose. What's the smallest <span class="blk">dropEvery</span> that's still playable?</div></td>
+        <td style="width:30%"><div class="box next"><b>Try a challenge</b>Compare a relaxed and a frantic version. Test each for the same time.</div></td>
       </tr></tbody></table>
     </div>
   </div>
@@ -194,7 +195,7 @@
     <div class="tag">SWOOP · MISSION 3 OF 5</div>
     <div class="hd">
       <div class="badge">3</div>
-      <h1>Win the season</h1>
+      <h1>Give it a win</h1>
       <p class="why">Right now you can only lose. Give the player a way to win.</p>
     </div>
     <div class="rule"></div>
@@ -204,23 +205,23 @@
         <td class="left">
           <ol class="steps">
             <li>Click <span class="tool" style="background:#CF6A87">Info</span> in the toolbox. Drag out <span class="blk">on score 100</span> and drop it on an empty part of the workspace.</li>
-            <li>Click the <b>100</b> and type <b>15</b>.</li>
+            <li>Change <b>100</b> to <b>2</b> for a quick test. This rounded-top event stands on its own.</li>
             <li>Click <span class="tool" style="background:#8155C1">Game</span>. Drag <span class="blk">game over</span> <b>inside</b> the block you just made.</li>
-            <li>Check it says <b>WIN</b>, not LOSE. Click the word to swap it.</li>
+            <li>Select <b>WIN</b>. Restart and catch 2 things. Then choose your real target, such as <b>15</b>.</li>
           </ol>
         </td>
         <td class="right">
           <img class="shot" src="img/m3-win.png" style="width:100%">
-          <div class="cap">Two blocks, two drawers — pink from <b>Info</b>, purple from <b>Game</b>.</div>
+          <div class="cap">Two blocks, two drawers - pink from <b>Info</b>, purple from <b>Game</b>.</div>
         </td>
       </tr></tbody></table>
     </div>
 
     <div class="foot">
       <table class="foot-t"><tbody><tr>
-        <td style="width:38%"><div class="box ok"><b>You'll know it worked</b>Catch 15 things and the screen says <b class="inl">YOU WIN!</b></div></td>
+        <td style="width:38%"><div class="box ok"><b>You'll know it worked</b>Reach your target and see <b class="inl">YOU WIN!</b> Restore your chosen target after testing.</div></td>
         <td style="width:32%"><div class="box warn"><b>Watch out</b>The purple block must sit <b class="inl">inside</b> the pink one, not underneath it.</div></td>
-        <td style="width:30%"><div class="box next"><b>Finished early?</b>Tune it. Change 15 until winning takes about a minute.</div></td>
+        <td style="width:30%"><div class="box next"><b>Try a challenge</b>Can a partner win in 30-60 seconds? Use their feedback to tune it.</div></td>
       </tr></tbody></table>
     </div>
   </div>
@@ -230,8 +231,8 @@
     <div class="tag">SWOOP · MISSION 4 OF 5</div>
     <div class="hd">
       <div class="badge">4</div>
-      <h1>Add a second crow</h1>
-      <p class="why">One crow isn't scary. You don't have to build a new one — copy the one that's already there.</p>
+      <h1>Change the challenge</h1>
+      <p class="why">Want more crows? Reuse the event and choose when they arrive.</p>
     </div>
     <div class="rule"></div>
 
@@ -239,7 +240,7 @@
       <table class="body"><tbody><tr>
         <td class="left">
           <ol class="steps">
-            <li>Find the purple <span class="blk">on game update every 3500 ms</span> stack — the one with <span class="blk">crow</span> all the way through it.</li>
+            <li>Find the purple <span class="blk">on game update every 3500 ms</span> stack - the one with <span class="blk">crow</span> all the way through it.</li>
             <li>Right-click the <b>purple bar at the very top</b>. Choose <b>Duplicate</b>.</li>
             <li>The copy sticks to your mouse. Click an empty spot to drop it.</li>
             <li>Change the copy's <b>3500</b> to something different. Try <b>2000</b>.</li>
@@ -247,16 +248,16 @@
         </td>
         <td class="right">
           <img class="shot" src="img/m4-duplicate.png" style="width:86%">
-          <div class="cap">Right-click the <b>top bar</b>, not a block inside it — or you'll only copy one line.</div>
+          <div class="cap">Right-click the <b>top bar</b>, not a block inside it - or you'll only copy one line.</div>
         </td>
       </tr></tbody></table>
     </div>
 
     <div class="foot">
       <table class="foot-t"><tbody><tr>
-        <td style="width:36%"><div class="box ok"><b>You'll know it worked</b>Two crows, arriving at different times. Noticeably harder.</div></td>
-        <td style="width:32%"><div class="box warn"><b>Watch out</b>Send a crow from the right and it flies <b class="inl">backwards</b> — the picture only faces one way.</div></td>
-        <td style="width:32%"><div class="box next"><b>Finished early?</b>In the copy, change <b class="inl">x</b> to <b class="inl">166</b> and <b class="inl">vx</b> to <b class="inl">-72</b>. Now fix the backwards bird.</div></td>
+        <td style="width:36%"><div class="box ok"><b>You'll know it worked</b>An extra stream of crows arrives. Is the game still fair and fun?</div></td>
+        <td style="width:32%"><div class="box warn"><b>Watch out</b>Copy the <b class="inl">whole event</b>. Ask your teacher to show the laptop's right-click gesture.</div></td>
+        <td style="width:32%"><div class="box next"><b>Try a challenge</b>Change the timing or flight path. Can you make more crows feel fairer?</div></td>
       </tr></tbody></table>
     </div>
   </div>
@@ -272,36 +273,37 @@
     <div class="hd">
       <div class="badge">5</div>
       <h1>Your twist</h1>
-      <p class="why">It's your game now. Pick one of these — or ignore all four and do your own.</p>
+      <p class="why">Choose ONE idea. Decide what you expect, then test it.</p>
     </div>
     <div class="rule"></div>
 
     <div class="zone">
       <table class="body"><tbody><tr>
         <td class="left">
-          <ol class="steps">
-            <li><b>A fifth shiny thing.</b> In <span class="blk">on start</span>, find the tall orange <span class="blk">array of</span> block holding the four pictures. Click the <b>&oplus;</b> at its <b>bottom</b>, then draw into the empty square that appears.</li>
-            <li><b>A bigger bucket.</b> <span class="tool" style="background:#4C97FF">Sprites</span> &rarr; <span class="blk">set scale to</span> — the very last block in that drawer.</li>
-            <li><b>A sound when you catch.</b> <span class="tool" style="background:#D63EBD">Music</span> &rarr; <span class="blk">play sound</span>, dropped inside the catch block. Change <span class="blk">until done</span> to <span class="blk">in background</span>.</li>
-            <li><b>Beat the clock.</b> <span class="tool" style="background:#CF6A87">Info</span> &rarr; <span class="blk">start countdown</span>. Change 10 to 60.</li>
+          <ol class="steps" style="font-size:10pt">
+            <li><b>Fifth item:</b> in <span class="blk">on start</span>, find the <span class="blk">loot</span> array. Click <b>+</b> at its bottom; draw in the new square. Test until your item falls.</li>
+            <li><b>Bigger bucket:</b> from <b>Sprites</b>, put <span class="blk">set scale to</span> in <span class="blk">on start</span>, below player creation. Select <b>player</b> and <b>1.5</b>. Restart: is it bigger?</li>
+            <li><b>Catch sound:</b> from <b>Music</b>, put <span class="blk">play sound</span> inside the existing <b>Player-Shiny overlap</b> event. Choose a sound and <b>in background</b>. Catch to hear it.</li>
+            <li><b>Timer:</b> from <b>Info</b>, put <span class="blk">start countdown 60</span> in <span class="blk">on start</span>. Watch it count down. Reach your win target before zero, or you lose.</li>
           </ol>
         </td>
         <td class="right">
-          <img class="shot" src="img/m5-ideas.png" style="width:100%">
-          <table style="width:100%; border-collapse:collapse; margin-top:3mm"><tbody><tr>
-            <td style="width:20mm; padding:0"><img class="shot" src="img/m5-loot.png" style="width:17mm"></td>
-            <td style="padding:0 0 0 2mm; text-align:left; vertical-align:middle">
-              <div class="cap" style="margin:0">Top three sit inside <span class="blk">on start</span>. The orange block on the left is the loot — its <b>&oplus;</b> is right at the bottom.</div>
-            </td>
-          </tr></tbody></table>
+          <img class="shot" src="img/m5-start.png" style="max-height:32mm" alt="On start with player creation, scale 1.5 and countdown 60">
+          <img class="shot" src="img/m5-catch.png" style="max-height:29mm; margin-top:2mm" alt="Player-Shiny overlap with catch sound inside the event">
+          <div style="display:flex; align-items:center; justify-content:center; margin-top:2mm">
+            <img class="shot" src="img/m5-loot.png" style="height:15mm; width:auto; margin:0 3mm 0 0" alt="Loot array and plus button">
+            <div class="cap" style="text-align:left">Add one image<br>with the loot <b>+</b>.</div>
+          </div>
+        </td>
+      </tr></tbody></table>
         </td>
       </tr></tbody></table>
     </div>
 
     <div class="foot">
       <table class="foot-t"><tbody><tr>
-        <td style="width:48%"><div class="box ok"><b>You'll know it worked</b>It does the thing you pictured in your head. If it doesn't — change <b class="inl">one</b> thing and press ▶ again. That's the whole job.</div></td>
-        <td style="width:52%"><div class="box next"><b>Going further</b>A helmet you can catch that blocks one swoop. A boss crow twice the size. Three birds. A high-score name. Put your hand up if you want help finding a block.</div></td>
+        <td style="width:48%"><div class="box ok"><b>You'll know it worked</b>It does the thing you pictured in your head. If it doesn't - change <b class="inl">one</b> thing and press ▶ again. That's the whole job.</div></td>
+        <td style="width:52%"><div class="box next"><b>Going further</b>Design a shield that blocks exactly one crow. Plan: what starts it, what remembers it, what shows it was used? Ask for a hint: event → variable → action.</div></td>
       </tr></tbody></table>
     </div>
   </div>
@@ -312,7 +314,7 @@
     <div class="hd">
       <div class="badge word">STUCK?</div>
       <h1>Read this first</h1>
-      <p class="why">Nearly every problem today is one of these four.</p>
+      <p class="why">Find the block, check its event, test again.</p>
     </div>
     <div class="rule"></div>
 
@@ -320,16 +322,16 @@
       <table class="body"><tbody><tr>
         <td class="left" style="width:60%; padding-right:6mm">
           <ul class="plain">
-            <li><b>Can't find a block?</b> Hunt by <b>colour</b>, not by name. Every block is the colour of the drawer it came out of. &rarr;</li>
-            <li><b>Nothing happened?</b> Check the block is actually <b>joined on</b> — dragged until it clicks. A block floating on its own does nothing.</li>
-            <li><b>Broke it?</b> <b>Ctrl</b>&thinsp;+&thinsp;<b>Z</b> undoes it. Press it as many times as you need.</li>
-            <li><b>Really broke it?</b> Nothing you do here can wreck anything. Hand up and we'll put it back.</li>
+            <li><b>Can't find a block?</b> Use its <b>name, colour and shape</b>. Try toolbox search too.</li>
+            <li><b>Where does it go?</b> Action blocks go <b>inside an event</b>. Rounded-top events, such as <b>on start</b> and <b>on score</b>, stand on their own.</li>
+            <li><b>Unexpected result?</b> Undo your last change with <b>Ctrl + Z</b> (Mac: <b>Cmd + Z</b>). Restart and test.</li>
+            <li><b>Catcher disappeared?</b> Open its picture and draw solid pixels. Still stuck? Ask for a working checkpoint.</li>
           </ul>
-          <div class="box ok" style="margin-top:4mm"><b>The one habit worth taking home</b>Change one thing. Press ▶. Look at what happened. Then change the next thing. Changing five things at once is how you end up lost.</div>
+          <div class="box ok" style="margin-top:4mm"><b>The one habit worth taking home</b>Predict. Change one thing. Restart. Notice what happened. Decide what to try next.</div>
         </td>
         <td class="right" style="width:40%">
-          <img class="shot" src="img/toolbox.png" style="width:30mm">
-          <div class="cap">The toolbox, down the left of the screen.</div>
+          <img class="shot" src="img/toolbox.png" style="width:23mm"><img class="shot" src="img/m3-win.png" style="width:62mm; margin-top:2mm"><div class="cap">Event outside. WIN action inside.</div>
+
         </td>
       </tr></tbody></table>
     </div>

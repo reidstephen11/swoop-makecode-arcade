@@ -3,141 +3,141 @@ namespace SpriteKind {
     export const Crow = SpriteKind.create()
     export const Scenery = SpriteKind.create()
 }
-let crow: Sprite = null
-let shiny: Sprite = null
-
-// ===== MISSION 2 =====
-// These two numbers make the game boring. Change them, then play again.
-let dropEvery = 2500
-let fallSpeed = 15
-
-// The shiny things the crow stole. Draw another one to add it to the game.
-let loot = [
-    img`
-        ..ffff..
-        .f5555f.
-        f551555f
-        f515545f
-        f554545f
-        f555455f
-        .f54455.
-        ..ffff..
-    `,
-    img`
-        ..fff...
-        .f11bf..
-        .fb.bf..
-        ..fbf...
-        ...bf...
-        ...bff..
-        ...bf...
-        ...bff..
-    `,
-    img`
-        .ffffff.
-        f911119f
-        f991199f
-        .f9999f.
-        .f6666f.
-        ..f66f..
-        ..f66f..
-        ...ff...
-    `,
-    img`
-        ..fbbf..
-        .ffffff.
-        f111111f
-        f11ff11f
-        f111f11f
-        f111111f
-        .ffffff.
-        ..fbbf..
-    `
-]
-let crowFrames = [
-    img`
-        ................
-        .........f......
-        ........f1f.....
-        .......f11f.....
-        .f....f111fff...
-        f1f.fff111111f..
-        f11f1111111114f.
-        f11111111111244f
-        .f11111111111444
-        f1111111111114ff
-        f11fbbbbbbbfff..
-        .ff.fffffff.....
-        ................
-        ................
-        ................
-        ................
-    `,
-    img`
-        ................
-        ................
-        ................
-        ................
-        .f........fff...
-        f1f.ffffff111f..
-        f11f1111111114f.
-        f11111111111244f
-        .f11111111111444
-        f1111111111114ff
-        f11fbbbbbbbfff..
-        .ff.fbbbfff.....
-        .....f11f.......
-        .....f1f........
-        ......f.........
-        ................
-    `
-]
-
-// ===== MISSION 1: change this colour =====
-scene.setBackgroundColor(12)
-
-let ground = sprites.create(img`
-@@GROUND@@`, SpriteKind.Scenery)
-ground.setPosition(80, 100)
-
-// ===== MISSION 1: redraw this bucket =====
-let player = sprites.create(img`
-        .....ffffff.....
-        ...ff......ff...
-        ..f..........f..
-        .ffffffffffffff.
-        .f111111111166f.
-        .f199999999966f.
-        .f199999999966f.
-        ..f1999999966f..
-        ..f1666666666f..
-        ..f1999999966f..
-        ...f19999966f...
-        ...f19999966f...
-        ...f19999966f...
-        ....f199966f....
-        ....ffffffff....
-        ................
-    `, SpriteKind.Player)
-player.setPosition(80, 96)
-player.setStayInScreen(true)
-controller.moveSprite(player, 110, 0)
-info.setScore(0)
-info.setLife(3)
-
+// Swooped!
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Crow, function (sprite, otherSprite) {
+    otherSprite.destroy(effects.spray, 200)
+    if (game.runtime() >= protectedUntil) {
+        protectedUntil = game.runtime() + 1000
+        info.changeLifeBy(-1)
+        scene.cameraShake(4, 500)
+        sprite.sayText("SAFE", 1000, false)
+        sprite.startEffect(effects.coolRadial, 1000)
+    }
+})
 // Caught something shiny
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Shiny, function (sprite, otherSprite) {
     info.changeScoreBy(1)
     otherSprite.destroy(effects.warmRadial, 100)
 })
-
-// Swooped!
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Crow, function (sprite, otherSprite) {
-    info.changeLifeBy(-1)
-    otherSprite.destroy(effects.spray, 200)
-    scene.cameraShake(4, 500)
-})
-
+let crow: Sprite = null
+let protectedUntil = 0
+// ===== MISSION 2 =====
+// Choose relaxed, busy or tricky. Predict, change ONE number, then test.
+let dropEvery = 2500
+let fallSpeed = 15
+// ===== MISSION 1: change this colour =====
+scene.setBackgroundColor(12)
+// ===== MISSION 1: recolour this bucket; keep some solid pixels =====
+let player2 = sprites.create(img`
+    . . . . . f f f f f f . . . . . 
+    . . . f f . . . . . . f f . . . 
+    . . f . . . . . . . . . . f . . 
+    . f f f f f f f f f f f f f f . 
+    . f 1 1 1 1 1 1 1 1 1 1 6 6 f . 
+    . f 1 9 9 9 9 9 9 9 9 9 6 6 f . 
+    . f 1 9 9 9 9 9 9 9 9 9 6 6 f . 
+    . . f 1 9 9 9 9 9 9 9 6 6 f . . 
+    . . f 1 6 6 6 6 6 6 6 6 6 f . . 
+    . . f 1 9 9 9 9 9 9 9 6 6 f . . 
+    . . . f 1 9 9 9 9 9 6 6 f . . . 
+    . . . f 1 9 9 9 9 9 6 6 f . . . 
+    . . . f 1 9 9 9 9 9 6 6 f . . . 
+    . . . . f 1 9 9 9 6 6 f . . . . 
+    . . . . f f f f f f f f . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player)
+player2.setPosition(80, 96)
+player2.setStayInScreen(true)
+controller.moveSprite(player2, 110, 0)
+info.setScore(0)
+info.setLife(3)
+// The shiny things the crow stole. Draw another one to add it to the game.
+let loot = [
+img`
+    . . f f f f . . 
+    . f 5 5 5 5 f . 
+    f 5 5 1 5 5 5 f 
+    f 5 1 5 5 4 5 f 
+    f 5 5 4 5 4 5 f 
+    f 5 5 5 4 5 5 f 
+    . f 5 4 4 5 5 . 
+    . . f f f f . . 
+    `,
+img`
+    . . f f f . . . 
+    . f 1 1 b f . . 
+    . f b . b f . . 
+    . . f b f . . . 
+    . . . b f . . . 
+    . . . b f f . . 
+    . . . b f . . . 
+    . . . b f f . . 
+    `,
+img`
+    . f f f f f f . 
+    f 9 1 1 1 1 9 f 
+    f 9 9 1 1 9 9 f 
+    . f 9 9 9 9 f . 
+    . f 6 6 6 6 f . 
+    . . f 6 6 f . . 
+    . . f 6 6 f . . 
+    . . . f f . . . 
+    `,
+img`
+    . . f b b f . . 
+    . f f f f f f . 
+    f 1 1 1 1 1 1 f 
+    f 1 1 f f 1 1 f 
+    f 1 1 1 f 1 1 f 
+    f 1 1 1 1 1 1 f 
+    . f f f f f f . 
+    . . f b b f . . 
+    `
+]
+let crowFrames = [img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . f . . . . . . 
+    . . . . . . . . f 1 f . . . . . 
+    . . . . . . . f 1 1 f . . . . . 
+    . f . . . . f 1 1 1 f f f . . . 
+    f 1 f . f f f 1 1 1 1 1 1 f . . 
+    f 1 1 f 1 1 1 1 1 1 1 1 1 4 f . 
+    f 1 1 1 1 1 1 1 1 1 1 1 2 4 4 f 
+    . f 1 1 1 1 1 1 1 1 1 1 1 4 4 4 
+    f 1 1 1 1 1 1 1 1 1 1 1 1 4 f f 
+    f 1 1 f b b b b b b b f f f . . 
+    . f f . f f f f f f f . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . f . . . . . . . . f f f . . . 
+    f 1 f . f f f f f f 1 1 1 f . . 
+    f 1 1 f 1 1 1 1 1 1 1 1 1 4 f . 
+    f 1 1 1 1 1 1 1 1 1 1 1 2 4 4 f 
+    . f 1 1 1 1 1 1 1 1 1 1 1 4 4 4 
+    f 1 1 1 1 1 1 1 1 1 1 1 1 4 f f 
+    f 1 1 f b b b b b b b f f f . . 
+    . f f . f b b b f f f . . . . . 
+    . . . . . f 1 1 f . . . . . . . 
+    . . . . . f 1 f . . . . . . . . 
+    . . . . . . f . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `]
+let ground = sprites.create(img`
+@@GROUND@@`, SpriteKind.Scenery)
+ground.setPosition(80, 100)
+ground.z = -1
+// A nearby first catch helps new players get started.
+let shiny = sprites.create(loot[0], SpriteKind.Shiny)
+shiny.setPosition(80, 72)
+shiny.setVelocity(0, fallSpeed)
+shiny.setFlag(SpriteFlag.AutoDestroy, true)
 // Drop the loot out of the nest
 game.onUpdateInterval(dropEvery, function () {
     shiny = sprites.create(loot._pickRandom(), SpriteKind.Shiny)
@@ -145,12 +145,16 @@ game.onUpdateInterval(dropEvery, function () {
     shiny.setVelocity(0, fallSpeed)
     shiny.setFlag(SpriteFlag.AutoDestroy, true)
 })
-
-// ===== MISSION 4: copy this whole block to add a second crow =====
+// ===== MISSION 4: copy this whole event to add a stream of crows =====
 game.onUpdateInterval(3500, function () {
     crow = sprites.create(crowFrames[0], SpriteKind.Crow)
     crow.setPosition(-6, randint(18, 72))
     crow.setVelocity(72, 16)
     crow.setFlag(SpriteFlag.AutoDestroy, true)
-    animation.runImageAnimation(crow, crowFrames, 140, true)
+    animation.runImageAnimation(
+    crow,
+    crowFrames,
+    140,
+    true
+    )
 })

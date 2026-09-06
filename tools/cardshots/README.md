@@ -3,8 +3,10 @@
 Every block picture on the mission cards is a screenshot of the **real** MakeCode
 Arcade editor, not a drawing. These four scripts regenerate them.
 
-Run from this folder, after `npm install playwright && npx playwright install chromium`
-in a scratch directory (nothing is installed into the project).
+Copy this folder into a scratch directory whose parent contains the installed
+Playwright `node_modules`, after `npm install playwright` and
+`npx playwright install chromium` there. Run scripts from the copied folder;
+nothing is installed into the delivered project.
 
 | Script | What it does |
 |---|---|
@@ -19,3 +21,17 @@ they are printed, not viewed.
 
 **The editor needs a long settle.** Every script waits 16–24 s after load and
 12–13 s after a tab switch. Shorter waits return an empty canvas.
+
+## Refined Mission 5 artwork
+
+`07-m5-blocks.ts` contains player creation, scale and countdown inside on start.
+`08-m5-catch.ts` contains sound inside the complete Player-Shiny catch event.
+Copy their generated screenshots to `Printables/img/m5-start.png` and
+`Printables/img/m5-catch.png`. Check the whole event heading and the full scale
+block are visible. The old `m5-ideas.png` is historical and no longer used.
+
+When adjusting exported block XML, preserve unprefixed HTML-namespace `mutation`
+elements exactly. A prefixed form such as `html:mutation` is ignored by MakeCode
+and can silently drop optional arguments. Verify the TypeScript after a real
+project PNG export/import; a successful compile of the pre-export source is not
+enough to catch this.

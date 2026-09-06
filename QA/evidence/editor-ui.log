@@ -1,0 +1,199 @@
+injected "f1eba9ef-106a-4085-ffb2-268ac2378a2f"
+TABS ["Blocks:ACTIVE","JavaScript:-","JavaScript:-"]
+GLOBALS { blockly: [ 'Msg' ], pxtblockly: [] }
+BODY Skip to Blocks workspace
+Skip to JavaScript editor
+Skip to Python editor
+Select Language
+Select Theme
+Go Home
+MakeCode Arcade
+Blocks
+JavaScript
+Assets
+Sign In
+Sprites
+Controller
+Game
+Music
+Scene
+Info
+Loops
+Logic
+Variables
+Math
+Animation
+Extensions
+Advanced
+Images
+Functions
+Arrays
+Text
+Console
+dropEvery
+loot
+get random value from
+Shiny
+sprite
+of kind
+shiny
+10
+150
+pick random
+to
+0
+shiny
+0
+fallSpeed
+shiny
+ON
+set
+auto destroy
+set
+velocity to vx
+vy
+set
+position to x
+y
+set
+shiny
+to
+on game update every
+ms
+3500
+crowFrames
+0
+get value at
+Crow
+sprite
+of kind
+crow
+-6
+18
+72
+pick random
+to
+crow
+72
+16
+crow
+ON
+crow
+crowFrames
+140
+ON
+animate
+frames
+interval (ms)
+loop
+set
+auto destroy
+set
+velocity to vx
+vy
+set
+position to x
+y
+set
+crow
+to
+on game update every
+ms
+sprite
+Player
+otherSprite
+Shiny
+1
+otherSprite
+100
+destroy
+with
+warm radial
+effect for
+ms
+change score by
+on
+of kind
+overlaps
+of kind
+sprite
+Player
+otherSprite
+Crow
+-1
+otherSprite
+200
+4
+500
+camera shake by
+pixels for
+ms
+destroy
+with
+spray
+effect for
+ms
+change life by
+on
+of kind
+overlaps
+of kind
+on start
+2500
+set
+dropEvery
+to
+15
+set
+fallSpeed
+to
+array of
+Scenery
+sprite
+of kind
+ground
+80
+100
+Player
+sprite
+of kind
+player
+80
+96
+player
+ON
+player
+110
+0
+0
+3
+set life to
+set score to
+move
+with buttons
+vx
+vy
+set
+stay in screen
+set
+position to x
+y
+set
+player
+to
+set
+position to x
+y
+set
+ground
+to
+set background color to
+set
+crowFrames
+to
+set
+loot
+to
+array of
+Download
+Type a name for your project

@@ -1,0 +1,14 @@
+IMPORT UI [
+  { text: 'Import Project', label: 'Import Project', type: null },
+  { text: 'Import', label: null, type: null },
+  { text: '', label: null, type: 'file' },
+  { text: 'Go ahead!', label: 'Go ahead!', type: null }
+]
+REOPEN PASS starter
+IMPORT UI [
+  { text: 'Import Project', label: 'Import Project', type: null },
+  { text: 'Import', label: null, type: null },
+  { text: '', label: null, type: 'file' },
+  { text: 'Go ahead!', label: 'Go ahead!', type: null }
+]
+REOPEN PASS checkpoint
